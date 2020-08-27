@@ -1,11 +1,12 @@
 {
-	"name": "gestios-maras",
-	"version": "0.1.1",
+	"name": "gestios-app-dummy",
+	"version": "0.2.0",
 	"private": true,
 	"scripts": {
 		"build:watch": "vue-cli-service build --watch --target lib --formats umd-min --name index src/main.js",
 		"build": "vue-cli-service build --target lib --formats umd-min --name index src/main.js",
-		"lint": "vue-cli-service lint --fix"
+		"lint": "vue-cli-service lint --fix",
+		"dev": "node dev.js"
 	},
 	"dependencies": {
 		"core-js": "^3.6.5",
@@ -18,12 +19,19 @@
 		"@vue/cli-plugin-babel": "~4.4.0",
 		"@vue/cli-plugin-eslint": "~4.4.0",
 		"@vue/cli-service": "~4.4.0",
-		"babel-eslint": "^10.1.0",
-		"eslint": "^6.7.2",
+		"babel-eslint": "^8.2.6",
+		"chalk": "^4.1.0",
+		"eslint": "^7.7.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-config-calltek": "^1.2.3",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-plugin-import": "^2.22.0",
 		"eslint-plugin-vue": "^6.2.2",
+		"express": "^4.17.1",
+		"figlet": "^1.5.0",
 		"sass": "^1.26.5",
 		"sass-loader": "^8.0.2",
-		"vue-template-compiler": "^2.6.11",
-		"eslint-config-calltek": "^1.2.1"
+		"shelljs": "^0.8.4",
+		"vue-template-compiler": "^2.6.11"
 	}
 }

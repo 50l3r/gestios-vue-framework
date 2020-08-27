@@ -77,7 +77,7 @@ export default {
 				},
 				{
 					title: 'Actions',
-					slot: '_actions',
+					slot: '_actions'
 				}
 			]
 		};
@@ -89,7 +89,7 @@ export default {
 	},
 	beforeDestroy() {
 		this.$hub.$off('eventButton');
-	},
+	}
 };
 </script>
 

@@ -1,4 +1,4 @@
-const project = require('../main.js').default
+const project = require('../main.js').default;
 
 const plugins = [
 	{
@@ -11,7 +11,7 @@ const plugins = [
 // Load Modules from 'modules' folder
 const modules = {};
 const files = require.context('./modules/', false, /\.js$/);
-files.keys().forEach(key => {
+files.keys().forEach((key) => {
 	modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default;
 });
 

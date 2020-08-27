@@ -1,7 +1,5 @@
 <template>
-	<div class="row">
-
-	</div>
+	<div class="row" />
 </template>
 
 <script>
@@ -14,15 +12,15 @@ export default {
 				ConfigKey1: 0,
 				ConfigKey2: '',
 				ConfigKey3: '',
-				ConfigKey4: null,
-			},
+				ConfigKey4: null
+			}
 		};
 	},
 	async created() {
 		const config = await this.$gestios.config.list(Object.keys(this.config));
 
 		if (config.ok) {
-			Object.keys(this.config).forEach(key => {
+			Object.keys(this.config).forEach((key) => {
 				this.config[key] = config.data[key];
 			});
 		}

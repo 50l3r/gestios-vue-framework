@@ -1,7 +1,7 @@
 // Vue Router Wiki: 	https://router.vuejs.org/
 // Font Awesome Icons: 	https://fontawesome.com/icons
 // GestiOS Roles
-//////////////////
+/// ///////////////
 // view.mine.APP			 : View user's items
 // view.APP					 : View all items
 // add.mod.APP				 : Add items with moderation status
@@ -15,7 +15,6 @@
 // moderate.APP				 : Delete & Moderate comments
 // uncomment.mine.APP		 : Delete user's comments
 // _BOSS					 : Only Admins
-
 
 function loadView(path) { // Async component
 	return () => import(`../views/${path}`);
@@ -60,8 +59,8 @@ export default [
 			icon: ['far', 'wrench'],
 			auth: {
 				strict: false,
-				roles: ['_BOSS'],
-			},
-		},
-	},
+				roles: ['_BOSS']
+			}
+		}
+	}
 ];
