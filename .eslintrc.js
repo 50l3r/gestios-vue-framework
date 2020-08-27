@@ -5,9 +5,9 @@ module.exports = {
 		node: true,
 		es6: true
 	},
+	extends: ['calltek', 'calltek/vue'],
 	parserOptions: {
 		parser: 'babel-eslint'
 	},
-	extends: ['calltek', 'calltek/vue'],
 	rules: {}
 };

@@ -1,12 +1,14 @@
+const project = require('../main.js').default
+
 const plugins = [
 	{
-		key: 'dummy',
-		paths: ['general'],
+		key: project.name,
+		paths: ['example'],
 		storage: window.localStorage
 	}
 ];
 
-// LOAD MODULES
+// Load Modules from 'modules' folder
 const modules = {};
 const files = require.context('./modules/', false, /\.js$/);
 files.keys().forEach(key => {
