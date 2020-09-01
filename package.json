@@ -1,7 +1,9 @@
 {
 	"name": "gestios-app-dummy",
 	"version": "0.2.0",
-	"private": true,
+	"private": false,
+	"url": "https://github.com/50l3r/gestios-vue-framework",
+	"email": "sistemas@calltek.es",
 	"scripts": {
 		"build:watch": "vue-cli-service build --watch --target lib --formats umd-min --name index src/main.js",
 		"build": "vue-cli-service build --target lib --formats umd-min --name index src/main.js",

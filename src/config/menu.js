@@ -6,15 +6,29 @@ export default [
 	},
 	// Menu Item
 	{
-		title: 'Partes', // Menu title
-		key: 'partes', // Primary key for active menu detection
+		title: 'Example', // Menu title
+		key: 'example', // Primary key for active menu detection
 		icon: ['fal', 'file'], // Font Awesome Icon
 		url: {
-			name: 'partes' // Url Slug
+			name: 'example' // Url Slug
 		},
 		auth: {
 			strict: false, // Require all roles or not
-			roles: ['view.partes', 'view.mine.partes'] // Array of required Roles
-		}
+			roles: ['view.example', 'view.mine.example'] // Required Roles
+		},
+		children: [ // Children items
+			{
+				title: 'Example SubMenu',
+				key: 'example_submenu',
+				icon: ['far', 'list'],
+				url: {
+					name: 'example'
+				},
+				auth: {
+					strict: false,
+					roles: ['add.example', 'add.mod.example']
+				}
+			}
+		]
 	}
 ];

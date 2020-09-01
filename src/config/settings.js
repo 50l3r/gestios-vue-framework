@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 
 module.exports = {
+	slug: 'dummy',
 	name: 'ExampleProject', 								// Project Miscelanea Name
 	version: require('../../package.json').version,			// Project Version
 	globalSearch: false, // Enable global search (In dev...)

@@ -8,6 +8,7 @@ const plugins = [
 	}
 ];
 
+// DANGER ZONE!!!
 // Load Modules from 'modules' folder
 const modules = {};
 const files = require.context('./modules/', false, /\.js$/);

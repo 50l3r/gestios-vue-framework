@@ -5,7 +5,7 @@ import store from './store';
 import task from './bg';
 
 export default {
-	name: 'dummy',
+	name: settings.slug,
 	router,
 	menu,
 	settings,
