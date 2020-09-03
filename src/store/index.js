@@ -1,8 +1,8 @@
-const project = require('../main.js').default;
+const project = require('../config/settings.js');
 
 const plugins = [
 	{
-		key: project.name,
+		key: project.slug,
 		paths: ['example'],
 		storage: window.localStorage
 	}
