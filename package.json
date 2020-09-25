@@ -6,9 +6,10 @@
 	"email": "sistemas@calltek.es",
 	"scripts": {
 		"build:watch": "vue-cli-service build --watch --target lib --formats umd-min --name index src/main.js",
-		"build": "vue-cli-service build --target lib --formats umd-min --name index src/main.js",
+		"build": "vue-cli-service build --target lib --formats umd-min --name index src/main.js && npm run rename",
 		"lint": "vue-cli-service lint --fix",
-		"dev": "node dev.js"
+		"dev": "node dev.js",
+		"rename": "renamer -f \"/^index.umd.min.js$/\" -r \"index.umd.js\" \"dist/*\""
 	},
 	"dependencies": {
 		"core-js": "^3.6.5",
@@ -31,6 +32,7 @@
 		"eslint-plugin-vue": "^6.2.2",
 		"express": "^4.17.1",
 		"figlet": "^1.5.0",
+		"renamer": "^2.0.1",
 		"sass": "^1.26.5",
 		"sass-loader": "^8.0.2",
 		"shelljs": "^0.8.4",
