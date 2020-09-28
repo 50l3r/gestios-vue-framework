@@ -9,5 +9,12 @@ module.exports = {
 	parserOptions: {
 		parser: 'babel-eslint'
 	},
-	rules: {}
+	rules: {},
+	settings: {
+		'import/resolver': {
+			alias: {
+				extensions: ['.js', '.vue', '.scss', '.less']
+			}
+		}
+	}
 };
